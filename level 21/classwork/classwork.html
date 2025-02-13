@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვიდეოები</title>
+</head>
+<body>
+    <h1>ვიდეოების დემონსტრაცია</h1>
+
+    <video controls>
+        <!-- პირველი ვიდეო (MP4 ფორმატი) -->
+        <source src="goalvideo1.mp4" type="video/mp4">
+        <!-- მეორე ვიდეო (WEBM ფორმატი) -->
+        <source src="goalvideo_2.webm" type="video/webm">
+        <!-- სათადარიგო ტექსტი, თუ ვიდეო არ supported იქნება -->
+        Video not supported.
+    </video>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვიდეოები და ფორმა</title>
+</head>
+<body>
+
+    <h1>ვიდეოების დემონსტრაცია</h1>
+
+    <!-- პირველი ვიდეო iframe -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id_1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- მეორე ვიდეო iframe -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id_2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- მესამე ვიდეო iframe -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id_3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>მარტივი ფორმა</h2>
+    <form action="#" method="post">
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">შეტყობინება:</label>
+        <input type="text" id="message" name="message" required><br><br>
+
+        <button type="submit">დადასტურება</button>
+    </form>
+
+</body>
+</html>

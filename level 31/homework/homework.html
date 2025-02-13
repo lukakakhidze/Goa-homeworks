@@ -1,0 +1,116 @@
+h1 {
+    color: blue;
+    font-size: 24px;
+  }
+
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline Style Example</title>
+</head>
+<body>
+  <div style="width: 200px; height: 100px; background-color: lightblue; overflow: auto;">
+    <p>This is the first paragraph inside the div.</p>
+    <p>This is the second paragraph inside the div.</p>
+    <p>This is the third paragraph inside the div.</p>
+    <p>This is the fourth paragraph inside the div.</p>
+    <p>This is the fifth paragraph inside the div.</p>
+  </div>
+</body>
+</html>
+
+
+<!--Descendant Selector CSS-ში არის selector, რომელიც გამოიყენება იმისთვის, რომ სტილი დავუმატოთ ისეთ ელემენტებს, რომლებიც სხვა ელემენტების შიგნით არისული. ეს ნიშნავს, რომ ჩვენ გამოვიყენებთ ერთ ელემენტს, როგორც "მამას".-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline Style Example</title>
+</head>
+<body>
+
+  <section style="color: white; background-color: green; display: flex; align-items: center; justify-content: center; height: 300px; flex-direction: column;">
+    <h1>Main Heading</h1>
+    <h2>Subheading</h2>
+    <p>This is the first paragraph inside the section.</p>
+    
+    <p style="color: black; background-color: yellow; text-align: left;">
+      This is the second paragraph with different inline styles.
+    </p>
+    
+    <button>Click Me 1</button>
+    <button>Click Me 2</button>
+  </section>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    section {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      text-align: center;
+    }
+    h1 {
+      color: #2C3E50;
+    }
+    h2 {
+      color: #16A085;
+    }
+    p {
+      color: #34495E;
+      font-size: 16px;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #2980B9;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 10px;
+      text-transform: uppercase;
+    }
+    .button:hover {
+      background-color: #3498DB;
+    }
+  </style>
+</head>
+<body>
+
+  <section style="background-color: #ecf0f1; text-align: center; padding: 30px;">
+    <h1>Main Heading</h1>
+    <h2>Subheading</h2>
+    
+    <p>This is the first paragraph in the section. It provides some context for the page.</p>
+    
+    <p>This is the second paragraph, with more details about the content on the page.</p>
+    
+    <button class="button">Click Me 1</button>
+    <button class="button">Click Me 2</button>
+  </section>
+
+</body>
+</html>
+
+
+  

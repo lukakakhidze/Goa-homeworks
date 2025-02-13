@@ -1,0 +1,83 @@
+<!--ატრიბუტი (Attribute) არის დამატებითი ინფორმაცია, რომელიც HTML ელემენტს ეკუთვნის და ამ ელემენტს გარკვეულ თვისებებს ან comportments-ს ანიჭებს. ატრიბუტები განიხილება როგორც თვისებები, რომლებიც განსაზღვრავენ HTML ტეგის ქცევას ან გარეგნობას.
+
+<label> ტეგი ემსახურება გამოსახულებას, რომელიც მომხმარებელს აღწერს, რა ინფორმაცია უნდა შეიტანოს კონკრეტულ <input> ელემენტში. კავშირი ხდება რამდენიმე გზით:
+
+    <!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types Example</title>
+</head>
+<body>
+
+    <h1>HTML Input Types</h1>
+
+    <form>
+        <!-- text -->
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text"><br><br>
+
+        <!-- password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- checkbox -->
+        <label for="checkbox">Accept Terms:</label>
+        <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+
+        <!-- radio -->
+        <label for="radio1">Option 1:</label>
+        <input type="radio" id="radio1" name="option" value="1">
+        <label for="radio2">Option 2:</label>
+        <input type="radio" id="radio2" name="option" value="2"><br><br>
+
+        <!-- submit -->
+        <input type="submit" value="Submit"><br><br>
+
+        <!-- reset -->
+        <input type="reset" value="Reset"><br><br>
+
+        <!-- file -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- number -->
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="10"><br><br>
+
+        <!-- date -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!-- time -->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <!-- email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- tel -->
+        <label for="tel">Phone:</label>
+        <input type="tel" id="tel" name="tel"><br><br>
+
+        <!-- url -->
+        <label for="url">Website:</label>
+        <input type="url" id="url" name="url"><br><br>
+
+        <!-- range -->
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="1" max="100"><br><br>
+
+        <!-- color -->
+        <label for="color">Pick a Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- hidden -->
+        <input type="hidden" id="hidden" name="hidden" value="hidden value"><br><br>
+
+    </form>
+
+</body>
+</html>

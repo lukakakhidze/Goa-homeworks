@@ -1,0 +1,42 @@
+
+
+1. <!--<video>:
+   - ეს  ტეგი გამოიყენება ვებგვერდზე ვიდეოს ჩასაბმელად. მისი გამოყენებით, შესაძლებელია ვიდეოს წამოწყება, გაჩერება და კონტროლი.
+   - ტეგი საშუალებას იძლევა, ვიდეოს გამოსაყენებლად სხვადასხვა ატრიბუტების დამატება, როგორიცაა `controls`, `autoplay`, `loop` და სხვა.
+   
+2. controls:
+   - ეს არის `<video>` და `<audio>` ტეგის ატრიბუტი, რომელიც დაამატებს ვიდეოს ან აუდიოს პლეიერის კონტროლებს, მაგალითად, გაჩერების, გაშვების, ხმის რეგულირების და პროგრეს ბარის ფუნქციებს. თუ ეს ატრიბუტი არ არის მითითებული, ვიდეო არ დაიმსახურებს კონტროლს.
+
+3. <source>:
+   - ეს ტეგი გამოიყენება როგორც `<video>` და `<audio>` ტეგების შიგნით, რათა მიაწოდოს სხვადასხვა ფორმატებში ერთი და იგივე ვიდეო ან აუდიო ფაილი. `<source>`-ის ატრიბუტებში, როგორიცაა `src` და `type`, მითითებულია ფაილის წყარო და მისი MIME ტიპი.
+   
+4. src:
+   - ეს ატრიბუტი გამოიყენება, რომ მითითდეს მედია რესურსის (ვიდეო, სურათი, აუდიო) წყარო. მაგალითად, `<video src="video.mp4">` განსაზღვრავს ვიდეოს წყაროს. `src` ატრიბუტი შეიძლება გამოყენებულ იქნას სხვა ტეგებში, მაგალითად, <img>, <audio>, <iframe>.
+
+5. type:
+   - ეს ატრიბუტი გამოიყენება `<source>` ტეგში, რათა დამტკიცდეს მედიის MIME ტიპი. მაგალითად, `<source src="video.mp4" type="video/mp4">` გვეუბნება, რომ ეს ვიდეო არის MP4 ფორმატში.
+   
+6. <iframe>:
+   - ეს ტეგი გამოიყენება სხვა დოკუმენტების ჩასასმელად ერთი HTML დოკუმენტიდან მეორეში, მაგალითად, სხვა ვებგვერდის ჩასატარებლად. `<iframe>` გამოიყენება მაშინ, როდესაც სხვა დომენიდან ან იგივე დომენიდან საჭირო წყარო უნდა ჩატვირთო. მაგალითად, ვიდეოების ჩასასმელად YouTube-ის ვებგვერდზე გამოიყენება <iframe>-->
+
+
+    <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        <source src="video2.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+<!--<iframe> და <video> ტეგები ორივე გამოიყენება მედია შინაარსის ჩასატვირთად, თუმცა მათი გამოყენების შემთხვევები და ფუნქციები განსხვავებულია.-->
+   
