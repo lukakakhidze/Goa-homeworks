@@ -1,95 +1,157 @@
-<!DOCTYPE html>
-<html lang="ka">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>წყალი და ჰაერი - სავიზიტო ბარათები</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="card">
-        <h2>💧 წყალი</h2>
-        <p><strong>სახელი:</strong> წყალი</p>
-        <p><strong>აგრეგატული მდგომარეობა:</strong> თხევადი</p>
-        <p><strong>მდებარეობა:</strong> დედამიწის ზედაპირი (ოკეანეები, მდინარეები)</p>
-        <p><strong>მნიშვნელობა:</strong> აუცილებელია ყველა ორგანიზმის სიცოცხლისთვის, ასევე რეგულირებს ტემპერატურას.</p>
-        <p><strong>შემადგენლობა:</strong> 2 წყალბადის (H) ატომი, 1 ჟანგბადის (O) ატომი</p>
-        <p><strong>ძირითადი დამაბინძურებლები:</strong> ქიმიური, ბიოლოგიური</p>
-        <p><strong>დაბინძურებისგან დაცვის გზები:</strong> წყლის წმენდა, ეკოლოგიური განათლება</p>
-        <p><strong>სამი საინტერესო ფაქტი:</strong></p>
-        <ul>
-            <li>დედამიწის 70%-ს წყალი ფარავს</li>
-            <li>წყალი მავნე ნივთიერებების ამოიღებს</li>
-            <li>წყალს შეუძლია ტემპერატურის რეგულირება</li>
-        </ul>
-    </div>
+#2
+def find_python_position(sentence):
+    position = sentence.find("Python")
+    return position
 
-    <div class="card">
-        <h2>🌬️ ჰაერი</h2>
-        <p><strong>სახელი:</strong> ჰაერი</p>
-        <p><strong>აგრეგატული მდგომარეობა:</strong> აირი</p>
-        <p><strong>მდებარეობა:</strong> დედამიწის ატმოსფეროში</p>
-        <p><strong>მნიშვნელობა:</strong> აუცილებელია სუნთქვისთვის და კლიმატის რეგულირებისთვის.</p>
-        <p><strong>შემადგენლობა:</strong> 78% აზოტი, 21% ჟანგბადი, სხვა ელემენტები</p>
-        <p><strong>ძირითადი დამაბინძურებლები:</strong> ნახშირორჟანგი, აზოტის ოქსიდები</p>
-        <p><strong>დაბინძურებისგან დაცვის გზები:</strong> გამწვანება, მწვანე ენერგია</p>
-        <p><strong>სამი საინტერესო ფაქტი:</strong></p>
-        <ul>
-            <li>ჰაერი მნიშვნელოვან როლს თამაშობს კლიმატის ცვლილებაში</li>
-            <li>ჰაერის 78%-ია აზოტი</li>
-            <li>ჰაერი საშუალებას გვაძლევს სუნთქვა და ფუნქციების შესრულება</li>
-        </ul>
-    </div>
-</body>
-</html>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+sentence = "I love programming in Python. Python is great!"
+position = find_python_position(sentence)
+print(f"First occurrence of 'Python' is at index: {position}")
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
 
-.card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
-    margin: 20px;
-    text-align: left;
-}
+#3
+def search_substring_in_string(string, substring):
+    index = string.find(substring)
+    if index != -1:
+        print(f"The substring '{substring}' starts at index: {index}")
+    else:
+        print(f"The substring '{substring}' was not found in the string.")
 
-h2 {
-    text-align: center;
-    color: #333;
-}
+input_string = "Welcome to the world of Python programming!"
+substring = input("Enter the substring you want to search: ")
+search_substring_in_string(input_string, substring)
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
 
-p {
-    color: #555;
-    line-height: 1.6;
-}
+#4
+def find_char_index(string, char):
+    index = string.find(char)
+    if index != -1:
+        return index
+    else:
+        return f"The character '{char}' is not in the string."
+    
+input_string = "Hello, World!"
+char_to_find = input("Enter the character to search for: ")
+index = find_char_index(input_string, char_to_find)
+print(f"The index of '{char_to_find}' is: {index}")
 
-.card p, .card ul {
-    margin-bottom: 10px;
-}
 
-.card:first-child {
-    border-left: 5px solid #00aaff;
-}
+#5
+def count_the_occurrences(paragraph):
+    count = paragraph.lower().split().count("the")
+    return count
 
-.card:last-child {
-    border-left: 5px solid #66cc66;
-}
+paragraph = "The quick brown fox jumps over the lazy dog. The dog was tired."
+count = count_the_occurrences(paragraph)
+print(f"The word 'the' appears {count} times.")
+
+
+#6
+def count_character_occurrences(string, char):
+    count = string.count(char)
+    return count
+
+input_string = "Hello, World!"
+char_to_count = input("Enter a character to count: ")
+count = count_character_occurrences(input_string, char_to_count)
+print(f"The character '{char_to_count}' appears {count} times in the string.")
+
+
+#7
+def count_word_occurrences(text, word):
+    count = text.lower().split().count(word.lower())
+    return count
+
+text = "Python is awesome. Python is great for learning. I love Python!"
+word_to_count = input("Enter the word you want to count: ")
+count = count_word_occurrences(text, word_to_count)
+print(f"The word '{word_to_count}' appears {count} times in the text.")
+
+
+#8
+def find_hello_index(string):
+    index = string.lower().find("hello")
+    if index != -1:
+        print(f"The first occurrence of 'hello' is at index: {index}")
+    else:
+        print("The word 'hello' was not found in the string.")
+
+input_string = "Say hello to the world! hello again!"
+find_hello_index(input_string)
+
+
+#9
+def find_char_index(string, char):
+    index = string.find(char)
+    if index != -1:
+        return index
+    else:
+        return f"The character '{char}' is not in the string."
+
+input_string = "Hello, World!"
+char_to_find = input("Enter the character to search for: ")
+index = find_char_index(input_string, char_to_find)
+print(f"The index of '{char_to_find}' is: {index}")
+
+
+#10
+def check_all_lowercase(string):
+    if string.islower():
+        print("All characters in the string are lowercase.")
+    else:
+        print("Not all characters in the string are lowercase.")
+
+input_string = "hello world"
+check_all_lowercase(input_string)
+
+
+#11
+def is_completely_lowercase(string):
+    return string.islower()
+
+input_string = "hello"
+result = is_completely_lowercase(input_string)
+print(f"Is the string completely in lowercase? {result}")
+
+
+#12
+def verify_lowercase_input():
+    user_input = input("Please enter a string: ")
+    
+    if user_input.islower():
+        print("The string contains only lowercase letters.")
+    else:
+        print("The string does not contain only lowercase letters.")
+
+verify_lowercase_input()
+
+
+#13
+def check_all_uppercase(string):
+    if string.isupper():
+        print("All characters in the string are uppercase.")
+    else:
+        print("Not all characters in the string are uppercase.")
+
+input_string = input("Enter a string: ")
+check_all_uppercase(input_string)
+
+
+#14
+def is_completely_uppercase(string):
+    return string.isupper()
+
+input_string = input("Enter a string: ")
+result = is_completely_uppercase(input_string)
+print(f"Is the string completely uppercase? {result}")
+
+
+#15
+def check_user_string_uppercase():
+    user_input = input("Please enter a string: ")
+    
+    if user_input.isupper():
+        print("The string is in uppercase.")
+    else:
+        print("The string is not in uppercase.")
+
+check_user_string_uppercase()
