@@ -1,0 +1,230 @@
+<!--ვებსაიტის რესპონსიული დიზაინი არის მიდგომა, რომლის მეშვეობითაც ვებსაიტი ინტერფეისს ადაპტირებს მომხმარებლის მოწყობილობის ეკრანის ზომას და სხვა პარამეტრებს, რათა მომხმარებელი ნებისმიერ მოწყობილობაზე.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexadecimal Color Example</title>
+    <style>
+        /* Using hex color codes */
+        .red {
+            background-color: #FF0000; /* Red */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .green {
+            background-color: #00FF00; /* Green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .blue {
+            background-color: #0000FF; /* Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .custom {
+            background-color: #FF5733; /* Custom color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">This is Red: #FF0000</div>
+    <div class="green">This is Green: #00FF00</div>
+    <div class="blue">This is Blue: #0000FF</div>
+    <div class="custom">This is Custom Color: #FF5733</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Paragraphs</title>
+    <style>
+        /* RGB color model for first five paragraphs */
+        .p1 {
+            background-color: rgb(255, 0, 0); /* Red */
+            color: rgb(255, 255, 255); /* White text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .p2 {
+            background-color: rgb(0, 255, 0); /* Green */
+            color: rgb(0, 0, 0); /* Black text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .p3 {
+            background-color: rgb(0, 0, 255); /* Blue */
+            color: rgb(255, 255, 255); /* White text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .p4 {
+            background-color: rgb(255, 165, 0); /* Orange */
+            color: rgb(0, 0, 0); /* Black text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .p5 {
+            background-color: rgb(255, 255, 0); /* Yellow */
+            color: rgb(0, 0, 0); /* Black text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        /* Hex color model for last five paragraphs */
+        .p6 {
+            background-color: #FF5733; /* Custom reddish-orange */
+            color: #FFFFFF; /* White text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .p7 {
+            background-color: #00FF00; /* Green */
+            color: #000000; /* Black text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .p8 {
+            background-color: #0000FF; /* Blue */
+            color: #FFFFFF; /* White text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .p9 {
+            background-color: #FFFF00; /* Yellow */
+            color: #000000; /* Black text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .p10 {
+            background-color: #800080; /* Purple */
+            color: #FFFFFF; /* White text */
+            padding: 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">This is the first paragraph with RGB Red background and white text.</p>
+    <p class="p2">This is the second paragraph with RGB Green background and black text.</p>
+    <p class="p3">This is the third paragraph with RGB Blue background and white text.</p>
+    <p class="p4">This is the fourth paragraph with RGB Orange background and black text.</p>
+    <p class="p5">This is the fifth paragraph with RGB Yellow background and black text.</p>
+
+    <p class="p6">This is the sixth paragraph with Hex #FF5733 (reddish-orange) background and white text.</p>
+    <p class="p7">This is the seventh paragraph with Hex #00FF00 (green) background and black text.</p>
+    <p class="p8">This is the eighth paragraph with Hex #0000FF (blue) background and white text.</p>
+    <p class="p9">This is the ninth paragraph with Hex #FFFF00 (yellow) background and black text.</p>
+    <p class="p10">This is the tenth paragraph with Hex #800080 (purple) background and white text.</p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Example</title>
+    <style>
+        /* Parent div with green background */
+        .parent {
+            width: 1000px;
+            height: 1000px;
+            background-color: #00FF00; /* Green */
+            position: relative; /* To position child div inside */
+            margin: 0 auto; /* Centering the parent div */
+        }
+
+        /* Child div with black background */
+        .child {
+            width: 20%; /* 20% of the parent's width */
+            height: 15%; /* 15% of the parent's height */
+            background-color: #000000; /* Black */
+            position: absolute; /* To place it inside the parent div */
+            top: 50%; /* Center the child vertically within the parent */
+            left: 50%; /* Center the child horizontally within the parent */
+            transform: translate(-50%, -50%); /* Adjust for perfect centering */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Blocks</title>
+    <style>
+        /* General styling for the div blocks */
+        .block {
+            margin: 10px 0; /* Space between the blocks */
+            width: 150px; /* Width greater than 100px */
+            height: 150px; /* Height greater than 100px */
+            display: inline-block; /* Display blocks inline */
+        }
+
+        .block1 {
+            background-color: #FF5733; /* Reddish-orange */
+        }
+        .block2 {
+            background-color: #33FF57; /* Green */
+        }
+        .block3 {
+            background-color: #5733FF; /* Blue */
+        }
+        .block4 {
+            background-color: #FFFF33; /* Yellow */
+        }
+        .block5 {
+            background-color: #FF33A1; /* Pink */
+        }
+        .block6 {
+            background-color: #33FFFF; /* Cyan */
+        }
+        .block7 {
+            background-color: #FF9633; /* Orange */
+        }
+        .block8 {
+            background-color: #9633FF; /* Purple */
+        }
+        .block9 {
+            background-color: #33FF96; /* Light green */
+        }
+        .block10 {
+            background-color: #FF33FF; /* Magenta */
+        }
+    </style>
+</head>
+<body>
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block4"></div>
+    <div class="block block5"></div>
+    <div class="block block6"></div>
+    <div class="block block7"></div>
+    <div class="block block8"></div>
+    <div class="block block9"></div>
+    <div class="block block10"></div>
+</body>
+</html>

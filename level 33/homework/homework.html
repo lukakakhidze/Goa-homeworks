@@ -1,0 +1,213 @@
+<!--id არის უნიკალური და გამოიყენება ერთი ელემენტის სწრაფად ამოსაძიებლად ან მისი სტილიზაციისთვის.
+class უფრო ფართოდ გამოიყენება საერთო სტილისთვის ან ერთი ტიპის ელემენტების მახასიათებლების დასაშვებად.-->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>პარაგრაფების ფერები</title>
+  <style>
+    /* CSS სტილები */
+    #p1 {
+      color: red;
+    }
+
+    #p2 {
+      color: green;
+    }
+
+    #p3 {
+      color: blue;
+    }
+
+    #p4 {
+      color: orange;
+    }
+
+    #p5 {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="p1">ეს არის პირველი პარაგრაფი (წითელი).</p>
+  <p id="p2">ეს არის მეორე პარაგრაფი (მწვანე).</p>
+  <p id="p3">ეს არის მესამე პარაგრაფი (ლურჯი).</p>
+  <p id="p4">ეს არის მეოთხე პარაგრაფი (ნარინჯისფერი).</p>
+  <p id="p5">ეს არის მეხუთე პარაგრაფი (ცისფერი).</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ღილაკები შავი ფერით</title>
+  <style>
+    /* CSS სტილები */
+    .black-button {
+      background-color: black;
+      color: white; /* რომ ტექსტი შავი ფონზე კარგად იყოს წაკითხული */
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .black-button:hover {
+      background-color: darkgray; /* მერკი, როდესაც მღებავს ღილაკზე */
+    }
+  </style>
+</head>
+<body>
+
+  <button class="black-button">ღილაკი 1</button>
+  <button class="black-button">ღილაკი 2</button>
+  <button class="black-button">ღილაკი 3</button>
+  <button class="black-button">ღილაკი 4</button>
+  <button class="black-button">ღილაკი 5</button>
+
+</body>
+</html>
+
+
+<!--CSS specificity ეხმარება ბრაუზერს განსაზღვროს, თუ რომელი სტილი უნდა გამოიყენოს ერთსა და იმავე ელემენტზე. ეს პრიორიტეტები გავლენას ახდენენ იმაზე, რომელი სტილი "გამარჯვებულად" გამოვა, როდესაც რამდენიმე სტილი ერთდროულად გამოიყენება.-->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ღილაკი ID და Class</title>
+  <style>
+    /* CSS სტილები */
+    #myButton {
+      color: blue;  /* პირველი წესში ფერი ლურჯი */
+    }
+
+    .buttonClass {
+      color: red;   /* მეორე წესში ფერი წითელი */
+    }
+  </style>
+</head>
+<body>
+
+  <button id="myButton" class="buttonClass">ღილაკი</button>
+
+</body>
+</html>
+
+
+<!--RGB ძალიან მოქნილია, რადგან საშუალებას იძლევა ზუსტად დააფიქსიროს ყველა შესაძლო ფერი, რაც მნიშვნელოვანია, როდესაც გვსურს, რომ დიგიტალური შუქი შეექმნას კონკრეტული ფერის პალიტრა.-->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Div ბლოკი</title>
+  <style>
+    /* CSS სტილები */
+    #div1 {
+      background-color: rgb(255, 200, 200); /* მსუბუქი წითელი ფონი */
+      color: rgb(0, 0, 0); /* შავი ტექსტი */
+      padding: 20px;
+      margin: 10px;
+    }
+
+    #div2 {
+      background-color: rgb(200, 255, 200); /* მსუბუქი მწვანე ფონი */
+      color: rgb(0, 0, 0); /* შავი ტექსტი */
+      padding: 20px;
+      margin: 10px;
+    }
+
+    #div3 {
+      background-color: rgb(200, 200, 255); /* მსუბუქი ლურჯი ფონი */
+      color: rgb(0, 0, 0); /* შავი ტექსტი */
+      padding: 20px;
+      margin: 10px;
+    }
+
+    #div4 {
+      background-color: rgb(255, 255, 200); /* მსუბუქი ყვითელი ფონი */
+      color: rgb(0, 0, 0); /* შავი ტექსტი */
+      padding: 20px;
+      margin: 10px;
+    }
+
+    #div5 {
+      background-color: rgb(200, 255, 255); /* მსუბუქი ცისფერი ფონი */
+      color: rgb(0, 0, 0); /* შავი ტექსტი */
+      padding: 20px;
+      margin: 10px;
+    }
+
+    /* სტილი ღილაკებისთვის */
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- პირველი div ბლოკი -->
+  <div id="div1">
+    <p>პარაგრაფი 1 - div1</p>
+    <p>პარაგრაფი 2 - div1</p>
+    <button>ღილაკი 1</button>
+    <button>ღილაკი 2</button>
+  </div>
+
+  <!-- მეორე div ბლოკი -->
+  <div id="div2">
+    <p>პარაგრაფი 1 - div2</p>
+    <p>პარაგრაფი 2 - div2</p>
+    <button>ღილაკი 1</button>
+    <button>ღილაკი 2</button>
+  </div>
+
+  <!-- მესამე div ბლოკი -->
+  <div id="div3">
+    <p>პარაგრაფი 1 - div3</p>
+    <p>პარაგრაფი 2 - div3</p>
+    <button>ღილაკი 1</button>
+    <button>ღილაკი 2</button>
+  </div>
+
+  <!-- მეოთხე div ბლოკი -->
+  <div id="div4">
+    <p>პარაგრაფი 1 - div4</p>
+    <p>პარაგრაფი 2 - div4</p>
+    <button>ღილაკი 1</button>
+    <button>ღილაკი 2</button>
+  </div>
+
+  <!-- მეხუთე div ბლოკი -->
+  <div id="div5">
+    <p>პარაგრაფი 1 - div5</p>
+    <p>პარაგრაფი 2 - div5</p>
+    <button>ღილაკი 1</button>
+    <button>ღილაკი 2</button>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
