@@ -1,0 +1,181 @@
+<!--სამი კუთვნილების გამოყენებით (border-width, border-style, border-color):
+ეს მეთოდი იყენებს სამი ცალკეული კუთვნილების განმარტებას: საზღვრის სიგანეს, ტიპს და ფერს.-->
+
+
+<!--div ბლოკი არის ძალიან მნიშვნელოვანი და ეფექტური ინსტრუმენტი HTML-ში. იგი გვეხმარება ვიზუალური განლაგების მართვაში, ელემენტების ჯგუფირებისას და გვერდის სტრუქტურის შედგენისას. CSS-ის დახმარებით div-ის გამოყენება იძლევა მოქნილობას და საშუალებას გვაძლევს შევქმნათ ეფექტური და სუფთა დიზაინები.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Example</title>
+    <style>
+        /* საზღვარი div-თვის */
+        .solid-border-div {
+            width: 300px;
+            height: 200px;
+            border: 5px solid black;  /* 5px სისქის მყარი საზღვარი */
+            margin: 20px;
+        }
+
+        /* გამოსახულებისთვის წერტილის საზღვარი */
+        .dotted-image {
+            width: 300px;
+            height: auto;
+            border: 5px dotted blue;  /* 5px სისქის წერტილი საზღვარი */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="solid-border-div">
+        <p>This div has a solid border with a thickness of 5px.</p>
+    </div>
+
+    <img src="https://via.placeholder.com/300" alt="Sample Image" class="dotted-image">
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Level Elements</title>
+    <style>
+        /* inline ელემენტების სტილი (წითელი ფერი) */
+        .inline-element {
+            color: red;  /* წითელი ფერი */
+            margin-right: 10px;  /* სივრცე ელემენტებს შორის */
+        }
+
+        /* block-level ელემენტების სტილი (ლურჯი ფერი) */
+        .block-element {
+            color: blue;  /* ლურჯი ფერი */
+            margin-bottom: 10px;  /* სივრცე ელემენტებს შორის */
+        }
+
+        /* div სტილი */
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="inline-element">Inline 1</span>
+        <span class="inline-element">Inline 2</span>
+        <span class="inline-element">Inline 3</span>
+        <span class="inline-element">Inline 4</span>
+        <span class="inline-element">Inline 5</span>
+
+        <br><br> 
+
+        <div class="block-element">Block 1</div>
+        <div class="block-element">Block 2</div>
+        <div class="block-element">Block 3</div>
+        <div class="block-element">Block 4</div>
+        <div class="block-element">Block 5</div>
+    </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Design Example</title>
+    <style>
+        /* Body სტილი */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* კონტეინერი */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        /* სვეტების განლაგება flexbox-ის გამოყენებით */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* სვეტი */
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: #e0f7fa;
+            border: 2px solid #00796b;
+            border-radius: 8px;
+        }
+
+        /* სათაურის სტილი */
+        h1 {
+            text-align: center;
+            color: #00796b;
+        }
+
+        /* ბმულების სტილი */
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hover ეფექტი ბმულისთვის */
+        a:hover {
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Responsive Flexbox Design</h1>
+        <div class="row">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>This is the first column. It has a background color and a border.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>This is the second column. It also has a background color and a border.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="column">
+                <h2>Column 3</h2>
+                <p>This is the third column. Similar to the others, it has a background color and a border.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

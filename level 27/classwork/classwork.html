@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Borders</title>
+    <style>
+        /* პირველ პარაგრაფს საზღვარი სამი კუთვნილებით */
+        p.first-paragraph {
+            border-width: 3px;  /* საზღვრის სისქე */
+            border-style: solid; /* საზღვრის ტიპი */
+            border-color: blue;  /* საზღვრის ფერი */
+            padding: 10px; /* ტექსტსა და საზღვარს შორის სივრცე */
+        }
+
+        /* მეორე და მესამე პარაგრაფს საზღვარი ერთ კუთვნილებით */
+        p.second-paragraph, p.third-paragraph {
+            border: 2px dashed green;  /* საზღვარი ერთ კუთვნილებით: სისქე, ტიპი და ფერი */
+            padding: 10px;  /* ტექსტსა და საზღვარს შორის სივრცე */
+        }
+    </style>
+</head>
+<body>
+
+    <p class="first-paragraph">This is the first paragraph with a border using three properties (width, style, color).</p>
+
+    <p class="second-paragraph">This is the second paragraph with a border using one property.</p>
+
+    <p class="third-paragraph">This is the third paragraph with a border using one property.</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Example</title>
+    <style>
+        /* სტილი დივ ბლოკისთვის */
+        .container {
+            width: 80%;  /* დივის სიგანე */
+            margin: 0 auto;  /* ცენტრში განთავსება */
+            text-align: center;  /* ყველა ელემენტის ცენტრში განთავსება */
+            padding: 20px;
+            border: 1px solid #ccc;  /* საბაზო საზღვარი დივისთვის */
+        }
+
+        /* პარაგრაფები ლურჯი ფერის */
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+
+        /* ღილაკები შავი ფონის და თეთრი ტექსტით */
+        button {
+            background-color: black; /* შავი ფონი */
+            color: white;  /* თეთრი ტექსტი */
+            padding: 10px 20px;
+            margin: 10px;  /* სივრცე ღილაკებს შორის */
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #333; /* ღილაკის ფერის მუქი ვარიანტი ჩასაკლავი */
+        }
+
+        /* სათაურებს ორმაგი წითელი საზღვარი */
+        h1, h2, h3 {
+            border: 3px double red;  /* ორმაგი წითელი საზღვარი */
+            padding: 10px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>First Title</h1>
+        <h2>Second Title</h2>
+        <h3>Third Title</h3>
+
+        <p>This is the first paragraph with blue text.</p>
+        <p>This is the second paragraph with blue text.</p>
+        <p>This is the third paragraph with blue text.</p>
+
+        <button>Click Me 1</button>
+        <button>Click Me 2</button>
+        <button>Click Me 3</button>
+    </div>
+
+</body>
+</html>

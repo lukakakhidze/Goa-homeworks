@@ -134,11 +134,12 @@ X /= 2
 
 #ირობითი განცხადებები საშუალებას იძლევა პროგრამას შეხედოს გარკვეული პირობები და გადადგას სხვადასხვა ნაბიჯები იმაზე დამოკიდებულად, თუ რამდენად მართებულია ეს პირობები.
 
-number = float(input("Enter a number"))
 
-if number > 0
-   print("The number is positive.")
-elif number < 0
-   print("The number is negative.") 
+number = float(input("შეიყვანეთ რიცხვი: "))
+
+if number > 0:
+    print("დადებითი რიცხვია.")
+elif number < 0:
+    print("უარყოფითი რიცხვია.")
 else:
-   print("The number is zero.")
+    print("რიცხვი არის ნული.")

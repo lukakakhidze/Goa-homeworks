@@ -1,0 +1,114 @@
+!--<header>: გამოიყენება საიტის ან გვერდის დასაწყისში, როგორც სათაური ან სათაურის ნაწილი. აქ შეიძლება იყოს ლოგო, ნავიგაცია ან სხვა ინფორმაცია, რომელიც მიანიშნებს გვერდის ან საიტის შესახებ.
+    <main>: წარმოადგენს მთავარი შინაარსის ნაწილს გვერდზე. ეს ტეგი არ უნდა გამოიყენებოდეს გვერდების გვერდითა ელემენტებში (მაგალითად, გვერდის ნავიგაციაში ან გვერდის ქვედა ნაწილში).
+    <footer>: გვერდის ქვედა ნაწილი, სადაც განთავსებულია ავტორის ინფორმაცია, კოპირაეთი, კონტაქტის მონაცემები და მსგავსი ინფორმაცია.
+    <aside>: გვერდის დამატებითი შინაარსი, რომელიც არ წარმოადგენს ძირითად შინაარსს, მაგრამ მაინც შეიძლება იყოს ინფორმაციული და დაკავშირებული გვერდთან.
+    <article>: გამოიყენება დამოუკიდებელი შინაარსის შესაქმნელად, რომელიც შეიძლება იყოს დამოუკიდებლად გასაკითხად. ეს შეიძლება იყოს ბლოგი, სიახლე ან სხვა დამოუკიდებელი ელემენტი.
+    <section>: გამოიყენება შინაარსის ჯგუფებად დაყოფისთვის. თითოეული სექცია უნდა შეიცავდეს სათაურს და შეიძლება მოიცავდეს ერთიანი თემატიკის შინაარსს.-->
+    
+        p {
+            color: red;
+        }
+    
+        div {
+            background-color: lightblue;
+        }
+        
+       
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Color and Background Color</title>
+            <style>
+                h1 {
+                    color: blue; /* Blue text color */
+                    background-color: yellow; /* Yellow background color */
+                }
+            </style>
+        </head>
+        <body>
+        
+            <h1>Heading with Blue Text and Yellow Background</h1>
+        
+        </body>
+        </html>
+    
+        
+        <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button Design</title>
+        <style>
+            .button {
+                color: white; /* White text color */
+                background-color: red; /* Red background color */
+                padding: 10px 20px; /* Add padding around the button text */
+                border: none; /* Remove the border */
+                cursor: pointer; /* Change the cursor to pointer when hovered */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <button class="button">Click Me</button>
+    
+    </body>
+    </html>
+    
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paragraph Styling</title>
+        <style>
+            /* პირველი პარაგრაფი */
+            p:nth-of-type(1) {
+                color: red; /* წითელი ტექსტი */
+                background-color: lightyellow; /* ღია ყვითელი ფონდი */
+                text-align: left; /* მარცხნივ გაწეული ტექსტი */
+            }
+    
+            /* მეორე პარაგრაფი */
+            p:nth-of-type(2) {
+                color: green; /* მწვანე ტექსტი */
+                background-color: lightblue; /* ღია ლურჯი ფონდი */
+                text-align: center; /* ცენტრში გაწეული ტექსტი */
+            }
+    
+            /* მესამე პარაგრაფი */
+            p:nth-of-type(3) {
+                color: blue; /* ლურჯი ტექსტი */
+                background-color: lightgreen; /* ღია მწვანე ფონდი */
+                text-align: right; /* მარჯვნივ გაწეული ტექსტი */
+            }
+    
+            /* მეოთხე პარაგრაფი */
+            p:nth-of-type(4) {
+                color: purple; /* იისფერი ტექსტი */
+                background-color: lightpink; /* ღია ვარდისფერი ფონდი */
+                text-align: justify; /* გამართვა */
+            }
+    
+            /* მეხუთე პარაგრაფი */
+            p:nth-of-type(5) {
+                color: orange; /* ნარინჯისფერი ტექსტი */
+                background-color: lightgray; /* ღია ნაცრისფერი ფონდი */
+                text-align: center; /* ცენტრში გაწეული ტექსტი */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <p>ეს არის პირველი პარაგრაფი. ტექსტი წითლად არის დაწერილი და ფონდი ღია ყვითელი.</p>
+        <p>ეს არის მეორე პარაგრაფი. ტექსტი მწვანედ არის დაწერილი და ფონდი ღია ლურჯია.</p>
+        <p>ეს არის მესამე პარაგრაფი. ტექსტი ლურჯად არის დაწერილი და ფონდი ღია მწვანეა.</p>
+        <p>ეს არის მეოთხე პარაგრაფი. ტექსტი იისფერია და ფონდი ღია ვარდისფერია.</p>
+        <p>ეს არის მეხუთე პარაგრაფი. ტექსტი ნარინჯისფერი და ფონდი ღია ნაცრისფერია.</p>
+    
+    </body>
+    </html>

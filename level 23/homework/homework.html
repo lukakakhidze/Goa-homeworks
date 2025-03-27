@@ -1,0 +1,176 @@
+<!--პირველი რაც უნდა გააკეთოთ, არის აუდიო ფაილის არჩევა, რომელიც გსურთ დაამატოთ თქვენს ვებსაიტზე. ეს შეიძლება იყოს MP3, OGG ან სხვა მხარდაჭერილი ფორმატი.-->
+<!--გამოიყენეთ <audio> ტეგი, რათა აიტვირთოს და შეასრულოს აუდიო ფაილი.-->
+
+
+<!--<audio> ტეგი
+მიზანი: <audio> ტეგი გამოიყენება აუდიო ფაილის ჩასაშვებად ვებ-გვერდზე. ის წარმოადგენს HTML5-ის ახალ ტეგს, რომელიც საშუალებას იძლევა აუდიო ფაილების ჩატვირთვა და ჩართვა.-->
+
+
+ <!--src: მიუთითებს აუდიო ან ვიდეო ფაილის წყაროს.
+    type: განსაზღვრავს ფაილის ფორმატს.
+    controls: უზრუნველყოფს მედიაპლეერის მართვის პანელს.
+    autoplay: იწყებს ავტომატურად დაკვრას.
+    loop: აწყობს აუდიო ან ვიდეოს უკუქცევას (დაუმთავრებლად გაშვებას).
+    muted: ჩართავს აუდიო მედიას ჩუმად.-->
+    
+    
+    <!DOCTYPE html>
+    <html lang="ka">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>მოსაზრებები და შინაარსი</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header, footer {
+                background-color: #333;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+            footer a {
+                color: white;
+                text-decoration: none;
+            }
+            .container {
+                margin: 20px;
+            }
+            .gallery img {
+                width: 30%;
+                margin: 10px;
+            }
+            .form-container {
+                margin-top: 30px;
+            }
+            .form-container input, .form-container select {
+                margin-bottom: 10px;
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <header>
+        <h1>ვებსაიტის სათაური</h1>
+        <nav>
+            <ul>
+                <li><a href="#">მთავარი</a></li>
+                <li><a href="#">შინაარსი</a></li>
+                <li><a href="#">კონტაქტი</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>გალერეა</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Image 1">
+                <img src="https://via.placeholder.com/300" alt="Image 2">
+                <img src="https://via.placeholder.com/300" alt="Image 3">
+                <img src="https://via.placeholder.com/300" alt="Image 4">
+                <img src="https://via.placeholder.com/300" alt="Image 5">
+                <img src="https://via.placeholder.com/300" alt="Image 6">
+            </div>
+            <br><hr><br>
+        </section>
+    
+        <section>
+            <h2>ჩემი სია</h2>
+            <h3>დალაგებული სია:</h3>
+            <ol>
+                <li>პუნქტი 1</li>
+                <li>პუნქტი 2</li>
+                <li>პუნქტი 3</li>
+            </ol>
+            
+            <h3>დაუშლელი სია:</h3>
+            <ul>
+                <li>პუნქტი A</li>
+                <li>პუნქტი B</li>
+                <li>პუნქტი C</li>
+            </ul>
+            
+            <h3>დალაგებული სია:</h3>
+            <ol>
+                <li>პუნქტი X</li>
+                <li>პუნქტი Y</li>
+                <li>პუნქტი Z</li>
+            </ol>
+            <br><hr><br>
+        </section>
+    
+        <section>
+            <h2>ვიდეო</h2>
+            <video controls>
+                <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                თქვენი ბრაუზერი არ ეწინააღმდეგება ვიდეოს.
+            </video>
+            <br><hr><br>
+        </section>
+    
+        <section>
+            <h2>აუდიო</h2>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                თქვენი ბრაუზერი არ ეწინააღმდეგება აუდიოს.
+            </audio>
+            <br><br>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mp3">
+                თქვენი ბრაუზერი არ ეწინააღმდეგება აუდიოს.
+            </audio>
+            <br><hr><br>
+        </section>
+    
+        <section class="form-container">
+            <h2>ფორმა</h2>
+            <form action="#" method="post">
+                <label for="name">სახელი:</label>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="email">ელ. ფოსტა:</label>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="age">ასაკი:</label>
+                <input type="number" id="age" name="age" required><br><br>
+    
+                <label for="country">ქვეყანა:</label>
+                <select id="country" name="country" required>
+                    <option value="Georgia">საქართველო</option>
+                    <option value="USA">აშშ</option>
+                    <option value="Germany">გერმანია</option>
+                </select><br><br>
+    
+                <label for="message">მესიჯი:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+                <button type="submit">დადასტურება</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="#">დაბრუნება დასაწყისში</a>
+    </footer>
+    
+    </body>
+    </html>
