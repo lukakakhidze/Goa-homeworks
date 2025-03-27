@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tasks</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            height: 300px; /* Set a fixed height to observe vertical alignment */
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        /* Flex item style */
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* 3) Align all flex items to the center of the container */
+        .center-items {
+            justify-content: center;
+        }
+
+        /* 4) Distribute items evenly across the container with space between */
+        .space-between {
+            justify-content: space-between;
+        }
+
+        /* 5) Make one item grow twice as much as the others */
+        .grow-item {
+            flex-grow: 2;
+        }
+
+        /* 6) Reverse the order of the flex items */
+        .reverse-items {
+            flex-direction: row-reverse;
+        }
+
+        /* 7) Align one specific item to the bottom */
+        .align-bottom {
+            align-self: flex-end;
+        }
+
+        /* 8) Wrap items to the next line when the container is too small */
+        .wrap-items {
+            flex-wrap: wrap;
+        }
+
+        /* 9) Center all items both horizontally and vertically */
+        .center-both {
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 10) Set all items to have equal width regardless of content size */
+        .equal-width {
+            flex: 1;
+        }
+
+        /* 11) Change the direction of items to a vertical column */
+        .column-direction {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container center-items" style="height: 200px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div class="container space-between" style="height: 200px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div class="container" style="height: 200px;">
+        <div class="item grow-item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div class="container reverse-items" style="height: 200px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div class="container" style="height: 300px;">
+        <div class="item">Item 1</div>
+        <div class="item align-bottom">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div class="container wrap-items" style="height: 200px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div class="container center-both" style="height: 300px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <div class="container" style="height: 200px;">
+        <div class="item equal-width">Item 1</div>
+        <div class="item equal-width">Item 2</div>
+        <div class="item equal-width">Item 3</div>
+    </div>
+
+    <div class="container column-direction" style="height: 300px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+</body>
+</html>

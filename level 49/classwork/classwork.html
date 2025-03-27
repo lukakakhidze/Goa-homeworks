@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Blocks</title>
+    <style>
+        /* მშობელი სექცია */
+        .container {
+            display: flex;
+            justify-content: space-between; /* ჰორიზონტალურად თანაბარი დაშორება */
+            align-items: center; /* ვერტიკალურად ცენტრი */
+            height: 100vh; /* მთლიანად ეკრანის სიმაღლე */
+            background-color: #f0f0f0;
+        }
+
+        /* თითოეული დივ ბლოკი */
+        .block {
+            width: 200px;
+            height: 200px;
+            background-color: #4CAF50; /* ფონი */
+            border: 5px solid #333; /* ბორდერი */
+            border-radius: 15px; /* ბორდერ-რაუდესი */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+
+</body>
+</html>
