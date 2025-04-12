@@ -1,0 +1,166 @@
+<!--1-->
+<style>
+    img:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
+    }
+  </style>
+  
+  <img src="image.jpg" alt="Example Image">
+
+  
+<!--2-->
+<style>
+    button:active {
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+    }
+  </style>
+  
+  <button>Click Me!</button>
+  
+
+<!--3-->
+<style>
+    div:hover {
+      transform: translateX(50px);
+      transition: transform 0.3s ease;
+    }
+  </style>
+  
+  <div style="width:100px; height:100px; background-color:red;">Hover Me!</div>
+  
+
+<!--4-->
+<style>
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+    i {
+      animation: rotate 2s linear infinite;
+    }
+  </style>
+  
+  <i class="fas fa-spinner"></i>
+  
+
+<!--5-->
+<style>
+    .card:hover {
+      transform: scale(0.98);
+      transition: transform 0.3s ease;
+    }
+  </style>
+  
+  <div class="card" style="width:200px; height:300px; background-color:lightblue;">Press Me!</div>
+  
+
+<!--6-->
+<style>
+    .modal {
+      position: fixed;
+      bottom: -100%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: bottom 0.5s ease;
+    }
+  
+    .modal.open {
+      bottom: 50%;
+    }
+  </style>
+  
+  <div class="modal" id="myModal">This is a modal</div>
+  <button onclick="document.getElementById('myModal').classList.toggle('open')">Open Modal</button>
+  
+
+<!--7-->
+<style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+  </style>
+  
+  <div class="spinner"></div>
+  
+
+<!--8-->
+<style>
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 0.3s ease, bottom 0.3s ease;
+    }
+  
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+      bottom: 135%;
+    }
+  </style>
+  
+  <div class="tooltip">Hover over me
+    <span class="tooltiptext">Tooltip text</span>
+  </div>
+  
+
+<!--9-->
+<style>
+    .zoom-background {
+      background-image: url('image.jpg');
+      background-size: cover;
+      width: 300px;
+      height: 200px;
+      transition: background-size 0.3s ease;
+    }
+  
+    .zoom-background:hover {
+      background-size: 110%;
+    }
+  </style>
+  
+  <div class="zoom-background"></div>
+  
+
+<!--10-->
+<style>
+    .rotate-text {
+      transition: transform 0.5s ease;
+    }
+  
+    .rotate-text.rotated {
+      transform: rotate(180deg);
+    }
+  </style>
+  
+  <div class="rotate-text" onclick="this.classList.toggle('rotated')">Click me to rotate</div>
+  
+
