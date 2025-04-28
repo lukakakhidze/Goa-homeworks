@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Animations</title>
+  <style>
+    /* 1 */
+    .move-box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: absolute;
+      animation: moveBox 3s linear infinite;
+    }
+
+    @keyframes moveBox {
+      0% { left: 0; }
+      100% { left: 80%; }
+    }
+
+    /* 2 */
+    .color-change {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation: colorChange 5s linear infinite;
+    }
+
+    @keyframes colorChange {
+      0% { background-color: blue; }
+      100% { background-color: red; }
+    }
+
+    /* 3 */
+    .rotate-box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      animation: rotate 3s infinite;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* 4*/
+    .pulse-box {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    /* 5 */
+    .ball {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      animation: bounce 1s ease-out 3;
+    }
+
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-150px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* 6 */
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid lightgray;
+      border-top: 5px solid blue;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* 7 */
+    .single-run {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+      animation: slide 2s forwards;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(300px); }
+    }
+
+    /* 8 */
+    .looping {
+      animation: move 2s linear infinite;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      animation: move 2s forwards;
+    }
+
+    @keyframes move {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(200px); }
+    }
+
+    /* 9 */
+    .delayed {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      animation: slide 2s ease-out 2s forwards;
+    }
+
+    /* 10 */
+    .box-sequence {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+      animation: slide 2s ease-out forwards;
+    }
+
+    .box-sequence:nth-child(1) { animation-delay: 0s; }
+    .box-sequence:nth-child(2) { animation-delay: 1s; }
+    .box-sequence:nth-child(3) { animation-delay: 2s; }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(200px); }
+    }
+
+    /* 11 */
+    .fade-box {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+      animation: fadeIn 10s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+  

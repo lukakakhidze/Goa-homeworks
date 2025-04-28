@@ -1,0 +1,420 @@
+<!--1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Layout</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Page</h1>
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    <button>Click Me</button>
+
+</body>
+</html>
+
+
+<!--2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Two Column Layout</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    .content {
+      flex: 1;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1, p {
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h1>Menu</h1>
+    <p>Home</p>
+    <p>About</p>
+    <p>Services</p>
+    <p>Contact</p>
+  </div>
+
+  <div class="content">
+    <h1>Welcome</h1>
+    <p>This is the main content area.</p>
+    <p>You can put articles, images, or anything else here.</p>
+  </div>
+
+</body>
+</html>
+
+
+<!--3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Header and Three Columns</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .container {
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+    .column {
+      flex: 1;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+    }
+    .column:nth-child(2) {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  My Awesome Website
+</header>
+
+<div class="container">
+  <div class="column">Left Column</div>
+  <div class="column">Middle Column</div>
+  <div class="column">Right Column</div>
+</div>
+
+</body>
+</html>
+
+
+<!--4-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Header, Sidebar, Content, Footer Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .main {
+      display: flex;
+      flex: 1;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #444;
+      color: white;
+      padding: 20px;
+    }
+    .content {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  My Website Header
+</header>
+
+<div class="main">
+  <div class="sidebar">
+    <h3>Sidebar</h3>
+    <p>Menu 1</p>
+    <p>Menu 2</p>
+    <p>Menu 3</p>
+  </div>
+  <div class="content">
+    <h1>Main Content</h1>
+    <p>This is where the main content goes.</p>
+  </div>
+</div>
+
+<footer>
+  My Website Footer
+</footer>
+
+</body>
+</html>
+
+
+<!--5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Layout</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ececec;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    .card h1 {
+      margin-bottom: 20px;
+    }
+    .card p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Welcome!</h1>
+  <p>This is a centered card layout.</p>
+</div>
+
+</body>
+</html>
+
+
+<!--6-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #4CAF50;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    .hero {
+      padding: 100px;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    .hero h1 {
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .hero button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Simple Website</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>Welcome to My Website</h1>
+  <p>We are glad to have you here.</p>
+  <button>Learn More</button>
+</div>
+
+<footer>
+  &copy; 2025 My Website
+</footer>
+
+</body>
+</html>
+
+
+<!--7-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Profile Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .profile-card {
+      background: white;
+      display: flex;
+      flex-direction: row;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .profile-card img {
+      width: 250px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      padding: 20px;
+    }
+
+    .profile-info h2 {
+      margin-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      .profile-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-card img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile-card">
+  <img src="https://via.placeholder.com/250" alt="Profile Picture">
+  <div class="profile-info">
+    <h2>Luk Kakhidze</h2>
+    <p>Web Developer | web Designer</p>
+    <p>Location: Tbilisi, Georgia</p>
+  </div>
+</div>
+
+</body>
+</html>

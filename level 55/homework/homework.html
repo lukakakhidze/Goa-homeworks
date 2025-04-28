@@ -1,0 +1,177 @@
+<!--1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation Example</title>
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: relative;
+      animation: moveBox 2s infinite alternate;
+    }
+
+    @keyframes moveBox {
+      0%   { left: 0; }
+      100% { left: 300px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+<!--2-->
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #222;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ff4d4d;
+      animation: animateCircle 3s infinite alternate ease-in-out;
+    }
+
+    @keyframes animateCircle {
+      0% {
+        transform: translateX(0) scale(1);
+        background-color: #ff4d4d;
+      }
+      50% {
+        transform: translateX(200px) scale(1.5);
+        background-color: #4dd2ff;
+      }
+      100% {
+        transform: translateX(0) scale(1);
+        background-color: #33cc33;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+</body>
+</html>
+
+
+<!--3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Fade-In Animation</title>
+  <style>
+    .fade-in-text {
+      opacity: 0;
+      animation: fadeIn 3s forwards;
+      font-size: 2rem;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 20%;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    body {
+      background-color: #111;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="fade-in-text">გამარჯობა, ეს ტექსტი ნელა ჩნდება!</div>
+</body>
+</html>
+
+
+<!--4-->
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: moveRight 2s infinite alternate;
+  }
+
+  @keyframes moveRight {
+    from { left: 0; }
+    to { left: 300px; }
+  }
+</style>
+
+<div class="box"></div>
+
+
+<!--5-->
+<style>
+  .color-change {
+    width: 200px;
+    height: 200px;
+    animation: bgColor 5s infinite alternate;
+  }
+
+  @keyframes bgColor {
+    from { background-color: blue; }
+    to { background-color: red; }
+  }
+</style>
+
+<div class="color-change"></div>
+
+
+<!--6-->
+<style>
+  .rotate {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+</style>
+
+<div class="rotate"></div>
+
+
+<!--7-->
+<style>
+  .pulse {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 50%;
+    animation: pulseEffect 1.5s infinite;
+  }
+
+  @keyframes pulseEffect {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+</style>
+
+<div class="pulse"></div>
