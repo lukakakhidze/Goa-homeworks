@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>სურათების დავალება</title>
+  <style>
+    img {
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>სურათების დავალება</h1>
+
+  <img src="image1.jpg" alt="პირველი სურათი" width="300" onclick="alert(' ლუკა')">
+
+  <img src="image2.jpg" alt="მეორე სურათი" width="300" id="secondImage" onclick="resizeImage()">
+
+  <script>
+    function resizeImage() {
+      const image = document.getElementById("secondImage");
+      image.style.height = "500px";
+    }
+  </script>
+
+</body>
+</html>

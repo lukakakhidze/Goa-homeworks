@@ -1,0 +1,124 @@
+<!--3-->
+let score = 10;
+console.log("Score before reassignment: " + score);
+
+score = 15;
+console.log("Score after reassignment: " + score);
+
+
+<!--4-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3</title>
+</head>
+<body>
+
+    <p id="output"></p>
+
+    <script>
+        let message = "Welcome!";
+        document.getElementById("output").textContent = message;
+    </script>
+
+</body>
+</html>
+
+
+<!--5-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 4</title>
+</head>
+<body>
+
+    <div id="greeting">Hello!</div>
+    <button onclick="changeGreeting()">Change Greeting</button>
+
+    <script>
+        function changeGreeting() {
+            document.getElementById("greeting").textContent = "Hi there!";
+        }
+    </script>
+
+</body>
+</html>
+
+
+<!--6-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+</head>
+<body>
+
+    <h1 id="title">Hello World</h1>
+    <button onclick="changeTitleColor()">Change Color</button>
+
+    <script>
+        function changeTitleColor() {
+            document.getElementById("title").style.color = "red";
+        }
+    </script>
+
+</body>
+</html>
+
+
+<!--7-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6</title>
+</head>
+<body>
+
+    <p id="counter">0</p>
+    <button onclick="incrementCounter()">Increase Counter</button>
+
+    <script>
+        let count = 0;
+
+        function incrementCounter() {
+            count++;
+            document.getElementById("counter").textContent = count;
+        }
+    </script>
+
+</body>
+</html>
+
+
+<!--8-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7</title>
+</head>
+<body>
+
+    <p id="status" style="color: gray;">Offline</p>
+    <button onclick="changeStatus()">Go Online</button>
+
+    <script>
+        function changeStatus() {
+            let statusElement = document.getElementById("status");
+            statusElement.textContent = "Online";
+            statusElement.style.color = "green";
+        }
+    </script>
+
+</body>
+</html>
