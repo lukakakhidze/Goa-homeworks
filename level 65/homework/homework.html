@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Favorite Things</title>
+</head>
+<body>
+  <p id="messageParagraph">ეს ტექსტი ჩანაცვლდება მომხმარებლის შეტყობინებით.</p>
+
+  <script>
+    let hobby = prompt("რა არის შენი საყვარელი ჰობი?");
+    alert("შენი ჰობი არის: " + hobby);
+
+    let firstName = prompt("შეიყვანე შენი სახელი:");
+    let lastName = prompt("შეიყვანე შენი გვარი:");
+    let fullName = firstName + " " + lastName;
+    alert("სრული სახელი: " + fullName);
+
+    let userMessage = prompt("შეიყვანე შეტყობინება, რომელიც გამოჩნდება გვერდზე:");
+    document.getElementById("messageParagraph").textContent = userMessage;
+
+    let emoji = prompt("შეიყვანე შენი საყვარელი ემოჯი:");
+    alert("მადლობა! შენს საყვარელ ემოჯის არის: " + emoji);
+
+    let newTitle = prompt("შეიყვანე სიტყვა გვერდის სათაურისთვის:");
+    document.title = newTitle;
+  </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forms Practice</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    form {
+      margin-bottom: 30px;
+    }
+    input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 6. Text input → alert -->
+  <h2>6. Text Input Alert</h2>
+  <form onsubmit="showInput(event)">
+    <input type="text" id="textInput" placeholder="Enter something">
+    <button type="submit">Show Alert</button>
+  </form>
+
+  <!-- 7. Color input → change background -->
+  <h2>7. Choose Background Color</h2>
+  <form onsubmit="changeBackground(event)">
+    <input type="color" id="bgColor">
+    <button type="submit">Change Background</button>
+  </form>
+
+  <!-- 8. First name + last name → show in h1 -->
+  <h2>8. Show Full Name</h2>
+  <form onsubmit="showFullName(event)">
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <button type="submit">Show Full Name</button>
+  </form>
+
+  <h1 id="fullNameOutput"></h1>
+
+  <script>
+    // 6
+    function showInput(event) {
+      event.preventDefault();
+      const value = document.getElementById("textInput").value;
+      alert("You entered: " + value);
+    }
+
+    // 7
+    function changeBackground(event) {
+      event.preventDefault();
+      const color = document.getElementById("bgColor").value;
+      document.body.style.backgroundColor = color;
+    }
+
+    // 8
+    function showFullName(event) {
+      event.preventDefault();
+      const first = document.getElementById("firstName").value;
+      const last = document.getElementById("lastName").value;
+      document.getElementById("fullNameOutput").textContent = first + " " + last;
+    }
+  </script>
+
+</body>
+</html>
