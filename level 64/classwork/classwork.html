@@ -1,0 +1,53 @@
+<!--1-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>სათაური და ღილაკი</title>
+  <style>
+    #main-title {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">ეს არის მთავარი სათაური</h1>
+  <button id="center-btn">დააწკაპე</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--2-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>სათაური</title>
+  <style>
+    #main-title {
+      text-align: left;
+      font-size: 24px;
+      font-weight: normal;
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">დააკლიკე ამ სათაურს</h1>
+
+  <script>
+    document.getElementById("main-title").addEventListener("click", function () {
+      this.style.textAlign = "center";
+      this.style.fontSize = "50px";
+      this.style.fontWeight = "900";
+      this.style.color = "green";
+    });
+  </script>
+
+</body>
+</html>

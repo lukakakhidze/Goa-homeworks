@@ -1,0 +1,54 @@
+<!--1-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>concStrings ფუნქცია</title>
+  <script>
+    function concStrings() {
+      let str1 = prompt("შეიყვანეთ პირველი ტექსტი:");
+      let str2 = prompt("შეიყვანეთ მეორე ტექსტი:");
+
+      let result = str1 + str2;
+
+      console.log("შედეგი:", result);
+    }
+  </script>
+</head>
+<body>
+
+  <button onclick="concStrings()">დააკლიკე ტექსტების შესაერთებლად</button>
+
+</body>
+</html>
+
+
+<!--2-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>compareStrings ფუნქცია</title>
+  <script>
+    function compareStrings() {
+      let input1 = prompt("შეიყვანეთ პირველი მნიშვნელობა:");
+      let input2 = prompt("შეიყვანეთ მეორე მნიშვნელობა:");
+
+      let looseEquality = input1 == input2;
+
+      let strictEquality = input1 === input2;
+
+      console.log("input1:", input1, "| ტიპი:", typeof input1);
+      console.log("input2:", input2, "| ტიპი:", typeof input2);
+      console.log("არამკაცრი ტოლობა (==):", looseEquality);
+      console.log("მკაცრი ტოლობა (===):", strictEquality);
+    }
+
+    window.onload = compareStrings;
+  </script>
+</head>
+<body>
+  <h1>გთხოვთ შეიყვანოთ ორი მნიშვნელობა</h1>
+  <p>შედარების შედეგი გამოჩნდება კონსოლში (დააჭირეთ F12 → Console)</p>
+</body>
+</html>
+
+
