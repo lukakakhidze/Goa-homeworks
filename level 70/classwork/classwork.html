@@ -1,0 +1,72 @@
+//2
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ფორმის დადასტურება</title>
+</head>
+<body>
+
+  <form id="loginForm">
+    <input type="text" id="loginInput" placeholder="შეიყვანე true ან სხვა რამე">
+    <button type="submit">შესვლა</button>
+  </form>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault(); 
+      const inputValue = document.getElementById("loginInput").value;
+
+      if (inputValue === "true") {
+        alert("logged in");
+      } else {
+        alert("try again");
+      }
+    }
+
+    document.getElementById("loginForm").addEventListener("submit", handleLogin);
+  </script>
+
+</body>
+</html>
+
+//3
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ფერის ცვლა</title>
+</head>
+<body>
+
+  <form id="colorForm">
+    <label>
+      ტექსტის ფერი:
+      <input type="text" id="textColorInput" placeholder="მაგ: red ან #000000">
+    </label>
+    <br>
+    <label>
+      ფონის ფერი:
+      <input type="text" id="bgColorInput" placeholder="მაგ: yellow ან #ffffff">
+    </label>
+    <br>
+    <button type="submit">შეცვლა</button>
+  </form>
+
+  <p>ეს ტექსტი შეიცვლის ფერს და ფონს!</p>
+
+  <script>
+    function changeColors(event) {
+      event.preventDefault();
+      const textColor = document.getElementById("textColorInput").value;
+      const bgColor = document.getElementById("bgColorInput").value;
+
+      document.body.style.color = textColor;
+      document.body.style.backgroundColor = bgColor;
+    }
+
+    document.getElementById("colorForm").addEventListener("submit", changeColors);
+  </script>
+
+</body>
+</html>
